@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" name="QA Devops" parallel="tests" >
+
+<listeners>
+   <listener
+			class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+       <listener class-name="com.qa.listeners.CustomListeners"/>
+  </listeners>
+  
+   <test name = "com.FirstTest"  parallel="methods" thread-count="3">
+   <parameter name="browser" value="chrome"/>
+      <classes>
+         <class name = "com.qa.testcases.MRRCampaign" />
+      </classes>
+   </test>
+</suite>

@@ -1,0 +1,777 @@
+14:15:12,692 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:12,707 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:12,710 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 100]
+14:15:12,759 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 100]
+14:15:12,761 DEBUG MainClientExec:235 - Opening connection {}->http://52.255.138.41:8080
+14:15:12,762 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to /52.255.138.41:8080
+14:15:12,781 DEBUG BaseTest:69 - Config file loaded !!!
+14:15:12,783 DEBUG BaseTest:85 - OR file loaded !!!
+14:15:12,990 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.0.108:62013<->52.255.138.41:8080
+14:15:12,990 DEBUG MainClientExec:256 - Executing request POST /api/v1/QADevops_TestRun/launch HTTP/1.1
+14:15:12,991 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:12,993 DEBUG headers:133 - http-outgoing-0 >> POST /api/v1/QADevops_TestRun/launch HTTP/1.1
+14:15:12,994 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 90
+14:15:12,994 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/json; charset=UTF-8
+14:15:12,994 DEBUG headers:136 - http-outgoing-0 >> Host: 52.255.138.41:8080
+14:15:12,995 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+14:15:12,995 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:12,995 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+14:15:12,995 DEBUG headers:136 - http-outgoing-0 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:12,996 DEBUG wire:73 - http-outgoing-0 >> "POST /api/v1/QADevops_TestRun/launch HTTP/1.1[\r][\n]"
+14:15:12,997 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 90[\r][\n]"
+14:15:12,997 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:12,997 DEBUG wire:73 - http-outgoing-0 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:12,998 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+14:15:12,998 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:12,998 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:12,998 DEBUG wire:73 - http-outgoing-0 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:12,999 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+14:15:12,999 DEBUG wire:87 - http-outgoing-0 >> "{"name":"QADevops_TestSuite","start_time":"2020-06-11T14:15:12.440+0530","mode":"DEFAULT"}"
+14:15:13,635 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+14:15:13,636 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:13,636 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+14:15:13,636 DEBUG wire:73 - http-outgoing-0 << "Date: Thu, 11 Jun 2020 08:45:06 GMT[\r][\n]"
+14:15:13,636 DEBUG wire:73 - http-outgoing-0 << "Expires: 0[\r][\n]"
+14:15:13,636 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+14:15:13,637 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:13,637 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+14:15:13,637 DEBUG wire:73 - http-outgoing-0 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:13,637 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 57[\r][\n]"
+14:15:13,638 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+14:15:13,638 DEBUG wire:87 - http-outgoing-0 << "{"id":"0df665ed-9963-42a2-a8d8-c0f6e8a1b084","number":17}"
+14:15:13,642 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 201 Created
+14:15:13,643 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:13,643 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+14:15:13,643 DEBUG headers:125 - http-outgoing-0 << Date: Thu, 11 Jun 2020 08:45:06 GMT
+14:15:13,644 DEBUG headers:125 - http-outgoing-0 << Expires: 0
+14:15:13,644 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+14:15:13,644 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+14:15:13,644 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: DENY
+14:15:13,644 DEBUG headers:125 - http-outgoing-0 << X-Xss-Protection: 1; mode=block
+14:15:13,644 DEBUG headers:125 - http-outgoing-0 << Content-Length: 57
+14:15:13,653 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:13,664 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:13,664 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:13,664 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 100]
+14:15:13,768 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:13,769 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:13,769 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 100]
+14:15:13,769 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 100]
+14:15:13,770 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:13,770 DEBUG MainClientExec:256 - Executing request POST /api/v1/QADevops_TestRun/item/ HTTP/1.1
+14:15:13,770 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:13,771 DEBUG headers:133 - http-outgoing-0 >> POST /api/v1/QADevops_TestRun/item/ HTTP/1.1
+14:15:13,771 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 126
+14:15:13,771 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/json; charset=UTF-8
+14:15:13,772 DEBUG headers:136 - http-outgoing-0 >> Host: 52.255.138.41:8080
+14:15:13,772 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+14:15:13,772 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:13,772 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+14:15:13,772 DEBUG headers:136 - http-outgoing-0 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:13,772 DEBUG wire:73 - http-outgoing-0 >> "POST /api/v1/QADevops_TestRun/item/ HTTP/1.1[\r][\n]"
+14:15:13,773 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 126[\r][\n]"
+14:15:13,773 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:13,773 DEBUG wire:73 - http-outgoing-0 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:13,773 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+14:15:13,773 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:13,773 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:13,773 DEBUG wire:73 - http-outgoing-0 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:13,774 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+14:15:13,774 DEBUG wire:87 - http-outgoing-0 >> "{"name":"Suite","start_time":"2020-06-11T14:15:12.610+0530","launch_id":"0df665ed-9963-42a2-a8d8-c0f6e8a1b084","type":"SUITE"}"
+14:15:14,009 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+14:15:14,009 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:14,009 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+14:15:14,009 DEBUG wire:73 - http-outgoing-0 << "Date: Thu, 11 Jun 2020 08:45:06 GMT[\r][\n]"
+14:15:14,009 DEBUG wire:73 - http-outgoing-0 << "Expires: 0[\r][\n]"
+14:15:14,010 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+14:15:14,010 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:14,010 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+14:15:14,010 DEBUG wire:73 - http-outgoing-0 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:14,010 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 96[\r][\n]"
+14:15:14,010 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+14:15:14,011 DEBUG wire:87 - http-outgoing-0 << "{"id":"8049f513-1334-4c30-8033-5dd2314505bb","uniqueId":"auto:eabc5fe922fce109d4e10a019f40bd67"}"
+14:15:14,011 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 201 Created
+14:15:14,011 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:14,011 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+14:15:14,011 DEBUG headers:125 - http-outgoing-0 << Date: Thu, 11 Jun 2020 08:45:06 GMT
+14:15:14,011 DEBUG headers:125 - http-outgoing-0 << Expires: 0
+14:15:14,011 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+14:15:14,011 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+14:15:14,012 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: DENY
+14:15:14,012 DEBUG headers:125 - http-outgoing-0 << X-Xss-Protection: 1; mode=block
+14:15:14,012 DEBUG headers:125 - http-outgoing-0 << Content-Length: 96
+14:15:14,012 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:14,012 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:14,012 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:14,013 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 100]
+14:15:14,021 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:14,021 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:14,022 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 100]
+14:15:14,022 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:14,022 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 100]
+14:15:14,022 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:14,022 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:14,022 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 100]
+14:15:14,023 DEBUG MainClientExec:256 - Executing request POST /api/v1/QADevops_TestRun/item/8049f513-1334-4c30-8033-5dd2314505bb HTTP/1.1
+14:15:14,023 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:14,023 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:14,023 DEBUG MainClientExec:235 - Opening connection {}->http://52.255.138.41:8080
+14:15:14,023 DEBUG headers:133 - http-outgoing-0 >> POST /api/v1/QADevops_TestRun/item/8049f513-1334-4c30-8033-5dd2314505bb HTTP/1.1
+14:15:14,024 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 149
+14:15:14,024 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/json; charset=UTF-8
+14:15:14,024 DEBUG headers:136 - http-outgoing-0 >> Host: 52.255.138.41:8080
+14:15:14,024 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+14:15:14,024 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to /52.255.138.41:8080
+14:15:14,024 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:14,025 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+14:15:14,025 DEBUG headers:136 - http-outgoing-0 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:14,025 DEBUG wire:73 - http-outgoing-0 >> "POST /api/v1/QADevops_TestRun/item/8049f513-1334-4c30-8033-5dd2314505bb HTTP/1.1[\r][\n]"
+14:15:14,025 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 149[\r][\n]"
+14:15:14,026 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:14,026 DEBUG wire:73 - http-outgoing-0 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:14,026 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+14:15:14,026 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:14,026 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:14,027 DEBUG wire:73 - http-outgoing-0 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:14,027 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+14:15:14,027 DEBUG wire:87 - http-outgoing-0 >> "{"name":"init","description":"","start_time":"2020-06-11T14:15:12.774+0530","launch_id":"0df665ed-9963-42a2-a8d8-c0f6e8a1b084","type":"BEFORE_SUITE"}"
+14:15:14,251 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.0.108:62018<->52.255.138.41:8080
+14:15:14,252 DEBUG MainClientExec:256 - Executing request POST /api/v1/QADevops_TestRun/item/8049f513-1334-4c30-8033-5dd2314505bb HTTP/1.1
+14:15:14,252 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:14,252 DEBUG headers:133 - http-outgoing-1 >> POST /api/v1/QADevops_TestRun/item/8049f513-1334-4c30-8033-5dd2314505bb HTTP/1.1
+14:15:14,252 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 133
+14:15:14,252 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
+14:15:14,252 DEBUG headers:136 - http-outgoing-1 >> Host: 52.255.138.41:8080
+14:15:14,253 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+14:15:14,253 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:14,253 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+14:15:14,253 DEBUG headers:136 - http-outgoing-1 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:14,253 DEBUG wire:73 - http-outgoing-1 >> "POST /api/v1/QADevops_TestRun/item/8049f513-1334-4c30-8033-5dd2314505bb HTTP/1.1[\r][\n]"
+14:15:14,253 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 133[\r][\n]"
+14:15:14,253 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:14,253 DEBUG wire:73 - http-outgoing-1 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:14,253 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+14:15:14,253 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:14,253 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:14,254 DEBUG wire:73 - http-outgoing-1 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:14,254 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+14:15:14,254 DEBUG wire:87 - http-outgoing-1 >> "{"name":"com.FirstTest","start_time":"2020-06-11T14:15:12.790+0530","launch_id":"0df665ed-9963-42a2-a8d8-c0f6e8a1b084","type":"TEST"}"
+14:15:14,289 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+14:15:14,289 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:14,289 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+14:15:14,289 DEBUG wire:73 - http-outgoing-0 << "Date: Thu, 11 Jun 2020 08:45:06 GMT[\r][\n]"
+14:15:14,289 DEBUG wire:73 - http-outgoing-0 << "Expires: 0[\r][\n]"
+14:15:14,289 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+14:15:14,290 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:14,290 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+14:15:14,290 DEBUG wire:73 - http-outgoing-0 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:14,290 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 96[\r][\n]"
+14:15:14,290 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+14:15:14,290 DEBUG wire:87 - http-outgoing-0 << "{"id":"15feab7a-d29f-416a-8c96-5c8ce8ab0058","uniqueId":"auto:d1650281f3717d7dde7f662335db285e"}"
+14:15:14,291 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 201 Created
+14:15:14,291 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:14,291 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+14:15:14,291 DEBUG headers:125 - http-outgoing-0 << Date: Thu, 11 Jun 2020 08:45:06 GMT
+14:15:14,291 DEBUG headers:125 - http-outgoing-0 << Expires: 0
+14:15:14,291 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+14:15:14,291 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+14:15:14,292 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: DENY
+14:15:14,292 DEBUG headers:125 - http-outgoing-0 << X-Xss-Protection: 1; mode=block
+14:15:14,292 DEBUG headers:125 - http-outgoing-0 << Content-Length: 96
+14:15:14,292 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:14,292 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:14,293 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:14,293 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:14,303 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:14,303 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:14,304 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:14,304 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:14,304 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:14,304 DEBUG MainClientExec:256 - Executing request PUT /api/v1/QADevops_TestRun/item/15feab7a-d29f-416a-8c96-5c8ce8ab0058 HTTP/1.1
+14:15:14,304 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:14,304 DEBUG headers:133 - http-outgoing-0 >> PUT /api/v1/QADevops_TestRun/item/15feab7a-d29f-416a-8c96-5c8ce8ab0058 HTTP/1.1
+14:15:14,304 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 61
+14:15:14,305 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/json; charset=UTF-8
+14:15:14,305 DEBUG headers:136 - http-outgoing-0 >> Host: 52.255.138.41:8080
+14:15:14,305 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+14:15:14,305 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:14,305 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+14:15:14,305 DEBUG headers:136 - http-outgoing-0 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:14,305 DEBUG wire:73 - http-outgoing-0 >> "PUT /api/v1/QADevops_TestRun/item/15feab7a-d29f-416a-8c96-5c8ce8ab0058 HTTP/1.1[\r][\n]"
+14:15:14,305 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 61[\r][\n]"
+14:15:14,306 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:14,306 DEBUG wire:73 - http-outgoing-0 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:14,306 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+14:15:14,306 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:14,306 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:14,306 DEBUG wire:73 - http-outgoing-0 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:14,306 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+14:15:14,306 DEBUG wire:87 - http-outgoing-0 >> "{"end_time":"2020-06-11T14:15:12.783+0530","status":"PASSED"}"
+14:15:14,493 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 201 Created[\r][\n]"
+14:15:14,493 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:14,493 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+14:15:14,493 DEBUG wire:73 - http-outgoing-1 << "Date: Thu, 11 Jun 2020 08:45:06 GMT[\r][\n]"
+14:15:14,493 DEBUG wire:73 - http-outgoing-1 << "Expires: 0[\r][\n]"
+14:15:14,493 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+14:15:14,493 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:14,494 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: DENY[\r][\n]"
+14:15:14,494 DEBUG wire:73 - http-outgoing-1 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:14,494 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 96[\r][\n]"
+14:15:14,494 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+14:15:14,494 DEBUG wire:87 - http-outgoing-1 << "{"id":"9c0015f2-1825-4db7-a501-f98d4bb2f7b0","uniqueId":"auto:9807fbaa7b7fcd09f1dc6a0214a8bc2d"}"
+14:15:14,494 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 201 Created
+14:15:14,494 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:14,494 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+14:15:14,494 DEBUG headers:125 - http-outgoing-1 << Date: Thu, 11 Jun 2020 08:45:06 GMT
+14:15:14,495 DEBUG headers:125 - http-outgoing-1 << Expires: 0
+14:15:14,495 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+14:15:14,495 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+14:15:14,495 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: DENY
+14:15:14,495 DEBUG headers:125 - http-outgoing-1 << X-Xss-Protection: 1; mode=block
+14:15:14,495 DEBUG headers:125 - http-outgoing-1 << Content-Length: 96
+14:15:14,495 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:14,495 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:14,496 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:14,496 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:14,497 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:14,497 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:14,497 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:14,497 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:14,497 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:14,498 DEBUG MainClientExec:256 - Executing request POST /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1
+14:15:14,498 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:14,498 DEBUG headers:133 - http-outgoing-1 >> POST /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1
+14:15:14,498 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 151
+14:15:14,498 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
+14:15:14,499 DEBUG headers:136 - http-outgoing-1 >> Host: 52.255.138.41:8080
+14:15:14,499 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+14:15:14,499 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:14,499 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+14:15:14,499 DEBUG headers:136 - http-outgoing-1 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:14,499 DEBUG wire:73 - http-outgoing-1 >> "POST /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1[\r][\n]"
+14:15:14,499 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 151[\r][\n]"
+14:15:14,499 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:14,499 DEBUG wire:73 - http-outgoing-1 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:14,499 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+14:15:14,500 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:14,500 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:14,500 DEBUG wire:73 - http-outgoing-1 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:14,500 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+14:15:14,500 DEBUG wire:87 - http-outgoing-1 >> "{"name":"setup","description":"","start_time":"2020-06-11T14:15:12.796+0530","launch_id":"0df665ed-9963-42a2-a8d8-c0f6e8a1b084","type":"BEFORE_METHOD"}"
+14:15:14,532 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+14:15:14,532 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:14,532 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+14:15:14,532 DEBUG wire:73 - http-outgoing-0 << "Date: Thu, 11 Jun 2020 08:45:06 GMT[\r][\n]"
+14:15:14,532 DEBUG wire:73 - http-outgoing-0 << "Expires: 0[\r][\n]"
+14:15:14,532 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+14:15:14,532 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:14,533 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+14:15:14,533 DEBUG wire:73 - http-outgoing-0 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:14,533 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 94[\r][\n]"
+14:15:14,533 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+14:15:14,533 DEBUG wire:87 - http-outgoing-0 << "{"message":"TestItem with ID = '15feab7a-d29f-416a-8c96-5c8ce8ab0058' successfully finished."}"
+14:15:14,533 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+14:15:14,533 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:14,533 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+14:15:14,533 DEBUG headers:125 - http-outgoing-0 << Date: Thu, 11 Jun 2020 08:45:06 GMT
+14:15:14,533 DEBUG headers:125 - http-outgoing-0 << Expires: 0
+14:15:14,533 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+14:15:14,534 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+14:15:14,534 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: DENY
+14:15:14,534 DEBUG headers:125 - http-outgoing-0 << X-Xss-Protection: 1; mode=block
+14:15:14,534 DEBUG headers:125 - http-outgoing-0 << Content-Length: 94
+14:15:14,534 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:14,534 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:14,534 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:14,535 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:14,741 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 201 Created[\r][\n]"
+14:15:14,741 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:14,741 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+14:15:14,741 DEBUG wire:73 - http-outgoing-1 << "Date: Thu, 11 Jun 2020 08:45:07 GMT[\r][\n]"
+14:15:14,741 DEBUG wire:73 - http-outgoing-1 << "Expires: 0[\r][\n]"
+14:15:14,741 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+14:15:14,741 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:14,742 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: DENY[\r][\n]"
+14:15:14,742 DEBUG wire:73 - http-outgoing-1 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:14,742 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 96[\r][\n]"
+14:15:14,742 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+14:15:14,742 DEBUG wire:87 - http-outgoing-1 << "{"id":"f3756e15-8a43-4949-bd24-a60026fd020f","uniqueId":"auto:b16cd5ce5ee72ba54685b14dff37e07b"}"
+14:15:14,742 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 201 Created
+14:15:14,742 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:14,742 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+14:15:14,742 DEBUG headers:125 - http-outgoing-1 << Date: Thu, 11 Jun 2020 08:45:07 GMT
+14:15:14,742 DEBUG headers:125 - http-outgoing-1 << Expires: 0
+14:15:14,742 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+14:15:14,743 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+14:15:14,743 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: DENY
+14:15:14,743 DEBUG headers:125 - http-outgoing-1 << X-Xss-Protection: 1; mode=block
+14:15:14,743 DEBUG headers:125 - http-outgoing-1 << Content-Length: 96
+14:15:14,743 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:14,743 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:14,743 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:14,743 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:18,743 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:18,743 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:18,744 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:18,746 DEBUG wire:87 - http-outgoing-1 << "[read] I/O error: Read timed out"
+14:15:18,746 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:18,746 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:18,747 DEBUG MainClientExec:256 - Executing request PUT /api/v1/QADevops_TestRun/item/f3756e15-8a43-4949-bd24-a60026fd020f HTTP/1.1
+14:15:18,747 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:18,747 DEBUG headers:133 - http-outgoing-1 >> PUT /api/v1/QADevops_TestRun/item/f3756e15-8a43-4949-bd24-a60026fd020f HTTP/1.1
+14:15:18,747 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 61
+14:15:18,747 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
+14:15:18,747 DEBUG headers:136 - http-outgoing-1 >> Host: 52.255.138.41:8080
+14:15:18,748 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+14:15:18,748 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:18,748 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+14:15:18,748 DEBUG headers:136 - http-outgoing-1 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:18,748 DEBUG wire:73 - http-outgoing-1 >> "PUT /api/v1/QADevops_TestRun/item/f3756e15-8a43-4949-bd24-a60026fd020f HTTP/1.1[\r][\n]"
+14:15:18,748 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 61[\r][\n]"
+14:15:18,749 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:18,749 DEBUG wire:73 - http-outgoing-1 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:18,749 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+14:15:18,749 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:18,749 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:18,750 DEBUG wire:73 - http-outgoing-1 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:18,750 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+14:15:18,750 DEBUG wire:87 - http-outgoing-1 >> "{"end_time":"2020-06-11T14:15:18.741+0530","status":"PASSED"}"
+14:15:18,759 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:18,759 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:18,760 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:18,762 DEBUG wire:87 - http-outgoing-0 << "[read] I/O error: Read timed out"
+14:15:18,762 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:18,762 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:18,762 DEBUG MainClientExec:256 - Executing request POST /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1
+14:15:18,763 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:18,763 DEBUG headers:133 - http-outgoing-0 >> POST /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1
+14:15:18,763 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 173
+14:15:18,763 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/json; charset=UTF-8
+14:15:18,763 DEBUG headers:136 - http-outgoing-0 >> Host: 52.255.138.41:8080
+14:15:18,763 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+14:15:18,763 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:18,764 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+14:15:18,764 DEBUG headers:136 - http-outgoing-0 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:18,764 DEBUG wire:73 - http-outgoing-0 >> "POST /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1[\r][\n]"
+14:15:18,764 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 173[\r][\n]"
+14:15:18,764 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:18,764 DEBUG wire:73 - http-outgoing-0 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:18,764 DEBUG BaseTest:22 - First Test Start----------------
+14:15:18,764 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+14:15:18,765 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:18,765 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:18,766 DEBUG wire:73 - http-outgoing-0 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:18,766 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+14:15:18,766 DEBUG wire:87 - http-outgoing-0 >> "{"name":"QA01_VerifyPatientName","description":"","start_time":"2020-06-11T14:15:18.742+0530","launch_id":"0df665ed-9963-42a2-a8d8-c0f6e8a1b084","type":"STEP","retry":false}"
+14:15:18,984 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+14:15:18,984 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:18,984 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+14:15:18,984 DEBUG wire:73 - http-outgoing-1 << "Date: Thu, 11 Jun 2020 08:45:11 GMT[\r][\n]"
+14:15:18,984 DEBUG wire:73 - http-outgoing-1 << "Expires: 0[\r][\n]"
+14:15:18,984 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+14:15:18,984 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:18,985 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: DENY[\r][\n]"
+14:15:18,985 DEBUG wire:73 - http-outgoing-1 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:18,985 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 94[\r][\n]"
+14:15:18,985 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+14:15:18,985 DEBUG wire:87 - http-outgoing-1 << "{"message":"TestItem with ID = 'f3756e15-8a43-4949-bd24-a60026fd020f' successfully finished."}"
+14:15:18,985 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+14:15:18,985 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:18,985 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+14:15:18,986 DEBUG headers:125 - http-outgoing-1 << Date: Thu, 11 Jun 2020 08:45:11 GMT
+14:15:18,986 DEBUG headers:125 - http-outgoing-1 << Expires: 0
+14:15:18,986 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+14:15:18,986 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+14:15:18,986 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: DENY
+14:15:18,986 DEBUG headers:125 - http-outgoing-1 << X-Xss-Protection: 1; mode=block
+14:15:18,986 DEBUG headers:125 - http-outgoing-1 << Content-Length: 94
+14:15:18,987 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:18,987 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:18,987 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:18,988 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:19,000 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+14:15:19,000 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:19,000 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+14:15:19,000 DEBUG wire:73 - http-outgoing-0 << "Date: Thu, 11 Jun 2020 08:45:11 GMT[\r][\n]"
+14:15:19,000 DEBUG wire:73 - http-outgoing-0 << "Expires: 0[\r][\n]"
+14:15:19,000 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+14:15:19,000 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:19,000 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+14:15:19,001 DEBUG wire:73 - http-outgoing-0 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:19,001 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 96[\r][\n]"
+14:15:19,001 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+14:15:19,001 DEBUG wire:87 - http-outgoing-0 << "{"id":"6ccc24d1-7aae-4fb1-9d3e-6acd0170e1fd","uniqueId":"auto:6062d381cfcd4253b350974638cf2a9b"}"
+14:15:19,001 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 201 Created
+14:15:19,001 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:19,001 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+14:15:19,001 DEBUG headers:125 - http-outgoing-0 << Date: Thu, 11 Jun 2020 08:45:11 GMT
+14:15:19,001 DEBUG headers:125 - http-outgoing-0 << Expires: 0
+14:15:19,001 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+14:15:19,001 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+14:15:19,001 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: DENY
+14:15:19,002 DEBUG headers:125 - http-outgoing-0 << X-Xss-Protection: 1; mode=block
+14:15:19,002 DEBUG headers:125 - http-outgoing-0 << Content-Length: 96
+14:15:19,002 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:19,002 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:19,002 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:19,002 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:22,151 DEBUG PoolingHttpClientConnectionManager:428 - Closing expired connections
+14:15:32,152 DEBUG PoolingHttpClientConnectionManager:428 - Closing expired connections
+14:15:42,152 DEBUG PoolingHttpClientConnectionManager:428 - Closing expired connections
+14:15:49,068  INFO HealthCare:28 - PGS first Test case
+14:15:49,071 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:49,071 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:49,071 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,073 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:49,073 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:49,074 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,074 DEBUG wire:87 - http-outgoing-0 << "[read] I/O error: Read timed out"
+14:15:49,074 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,074 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:49,074 DEBUG MainClientExec:256 - Executing request PUT /api/v1/QADevops_TestRun/item/6ccc24d1-7aae-4fb1-9d3e-6acd0170e1fd HTTP/1.1
+14:15:49,074 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:49,074 DEBUG headers:133 - http-outgoing-0 >> PUT /api/v1/QADevops_TestRun/item/6ccc24d1-7aae-4fb1-9d3e-6acd0170e1fd HTTP/1.1
+14:15:49,075 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 61
+14:15:49,075 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/json; charset=UTF-8
+14:15:49,075 DEBUG headers:136 - http-outgoing-0 >> Host: 52.255.138.41:8080
+14:15:49,075 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+14:15:49,075 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:49,075 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+14:15:49,075 DEBUG headers:136 - http-outgoing-0 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:49,075 DEBUG wire:73 - http-outgoing-0 >> "PUT /api/v1/QADevops_TestRun/item/6ccc24d1-7aae-4fb1-9d3e-6acd0170e1fd HTTP/1.1[\r][\n]"
+14:15:49,075 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 61[\r][\n]"
+14:15:49,075 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:49,075 DEBUG wire:73 - http-outgoing-0 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:49,075 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+14:15:49,076 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:49,076 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:49,076 DEBUG wire:87 - http-outgoing-1 << "[read] I/O error: Read timed out"
+14:15:49,076 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 0; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,076 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:49,076 DEBUG MainClientExec:256 - Executing request POST /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1
+14:15:49,076 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:49,076 DEBUG wire:73 - http-outgoing-0 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:49,077 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+14:15:49,077 DEBUG headers:133 - http-outgoing-1 >> POST /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1
+14:15:49,077 DEBUG wire:87 - http-outgoing-0 >> "{"end_time":"2020-06-11T14:15:49.069+0530","status":"PASSED"}"
+14:15:49,077 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 153
+14:15:49,077 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
+14:15:49,077 DEBUG headers:136 - http-outgoing-1 >> Host: 52.255.138.41:8080
+14:15:49,077 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+14:15:49,077 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:49,077 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+14:15:49,077 DEBUG headers:136 - http-outgoing-1 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:49,078 DEBUG wire:73 - http-outgoing-1 >> "POST /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1[\r][\n]"
+14:15:49,078 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 153[\r][\n]"
+14:15:49,078 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:49,078 DEBUG wire:73 - http-outgoing-1 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:49,078 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+14:15:49,078 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:49,078 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:49,079 DEBUG wire:73 - http-outgoing-1 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:49,079 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+14:15:49,079 DEBUG wire:87 - http-outgoing-1 >> "{"name":"tearDown","description":"","start_time":"2020-06-11T14:15:49.072+0530","launch_id":"0df665ed-9963-42a2-a8d8-c0f6e8a1b084","type":"AFTER_METHOD"}"
+14:15:49,340 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+14:15:49,341 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:49,341 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+14:15:49,341 DEBUG wire:73 - http-outgoing-0 << "Date: Thu, 11 Jun 2020 08:45:41 GMT[\r][\n]"
+14:15:49,341 DEBUG wire:73 - http-outgoing-0 << "Expires: 0[\r][\n]"
+14:15:49,342 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+14:15:49,342 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:49,342 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+14:15:49,342 DEBUG wire:73 - http-outgoing-0 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:49,342 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 201 Created[\r][\n]"
+14:15:49,342 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 94[\r][\n]"
+14:15:49,343 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+14:15:49,342 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:49,343 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+14:15:49,343 DEBUG wire:73 - http-outgoing-1 << "Date: Thu, 11 Jun 2020 08:45:41 GMT[\r][\n]"
+14:15:49,343 DEBUG wire:87 - http-outgoing-0 << "{"message":"TestItem with ID = '6ccc24d1-7aae-4fb1-9d3e-6acd0170e1fd' successfully finished."}"
+14:15:49,343 DEBUG wire:73 - http-outgoing-1 << "Expires: 0[\r][\n]"
+14:15:49,344 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+14:15:49,344 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+14:15:49,344 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:49,344 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:49,344 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: DENY[\r][\n]"
+14:15:49,344 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+14:15:49,344 DEBUG wire:73 - http-outgoing-1 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:49,344 DEBUG headers:125 - http-outgoing-0 << Date: Thu, 11 Jun 2020 08:45:41 GMT
+14:15:49,345 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 96[\r][\n]"
+14:15:49,345 DEBUG headers:125 - http-outgoing-0 << Expires: 0
+14:15:49,345 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+14:15:49,345 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+14:15:49,345 DEBUG wire:87 - http-outgoing-1 << "{"id":"310e5248-38a9-4249-bab5-f66821cb4afc","uniqueId":"auto:e863fb82082f31acf17fc1d8a0574a5e"}"
+14:15:49,345 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+14:15:49,346 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: DENY
+14:15:49,346 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 201 Created
+14:15:49,346 DEBUG headers:125 - http-outgoing-0 << X-Xss-Protection: 1; mode=block
+14:15:49,346 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:49,346 DEBUG headers:125 - http-outgoing-0 << Content-Length: 94
+14:15:49,346 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+14:15:49,347 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:49,347 DEBUG headers:125 - http-outgoing-1 << Date: Thu, 11 Jun 2020 08:45:41 GMT
+14:15:49,347 DEBUG headers:125 - http-outgoing-1 << Expires: 0
+14:15:49,347 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:49,347 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+14:15:49,348 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+14:15:49,348 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+14:15:49,348 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,348 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: DENY
+14:15:49,348 DEBUG headers:125 - http-outgoing-1 << X-Xss-Protection: 1; mode=block
+14:15:49,348 DEBUG headers:125 - http-outgoing-1 << Content-Length: 96
+14:15:49,349 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:49,349 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:49,349 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:49,350 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,352 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:49,352 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:49,352 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,352 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,353 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:49,353 DEBUG MainClientExec:256 - Executing request PUT /api/v1/QADevops_TestRun/item/310e5248-38a9-4249-bab5-f66821cb4afc HTTP/1.1
+14:15:49,353 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:49,353 DEBUG headers:133 - http-outgoing-1 >> PUT /api/v1/QADevops_TestRun/item/310e5248-38a9-4249-bab5-f66821cb4afc HTTP/1.1
+14:15:49,353 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 61
+14:15:49,353 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
+14:15:49,354 DEBUG headers:136 - http-outgoing-1 >> Host: 52.255.138.41:8080
+14:15:49,354 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+14:15:49,354 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:49,354 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+14:15:49,354 DEBUG headers:136 - http-outgoing-1 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:49,354 DEBUG wire:73 - http-outgoing-1 >> "PUT /api/v1/QADevops_TestRun/item/310e5248-38a9-4249-bab5-f66821cb4afc HTTP/1.1[\r][\n]"
+14:15:49,355 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 61[\r][\n]"
+14:15:49,355 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:49,355 DEBUG wire:73 - http-outgoing-1 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:49,355 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+14:15:49,355 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:49,356 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:49,356 DEBUG wire:73 - http-outgoing-1 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:49,356 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+14:15:49,356 DEBUG wire:87 - http-outgoing-1 >> "{"end_time":"2020-06-11T14:15:49.247+0530","status":"PASSED"}"
+14:15:49,592 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+14:15:49,592 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:49,592 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+14:15:49,593 DEBUG wire:73 - http-outgoing-1 << "Date: Thu, 11 Jun 2020 08:45:41 GMT[\r][\n]"
+14:15:49,593 DEBUG wire:73 - http-outgoing-1 << "Expires: 0[\r][\n]"
+14:15:49,593 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+14:15:49,593 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:49,593 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: DENY[\r][\n]"
+14:15:49,593 DEBUG wire:73 - http-outgoing-1 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:49,593 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 94[\r][\n]"
+14:15:49,594 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+14:15:49,594 DEBUG wire:87 - http-outgoing-1 << "{"message":"TestItem with ID = '310e5248-38a9-4249-bab5-f66821cb4afc' successfully finished."}"
+14:15:49,594 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+14:15:49,594 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:49,594 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+14:15:49,594 DEBUG headers:125 - http-outgoing-1 << Date: Thu, 11 Jun 2020 08:45:41 GMT
+14:15:49,594 DEBUG headers:125 - http-outgoing-1 << Expires: 0
+14:15:49,595 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+14:15:49,595 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+14:15:49,595 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: DENY
+14:15:49,595 DEBUG headers:125 - http-outgoing-1 << X-Xss-Protection: 1; mode=block
+14:15:49,595 DEBUG headers:125 - http-outgoing-1 << Content-Length: 94
+14:15:49,595 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:49,596 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:49,596 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:49,596 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,598 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:49,598 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:49,598 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,599 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,599 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:49,601 DEBUG MainClientExec:256 - Executing request PUT /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1
+14:15:49,601 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:49,602 DEBUG headers:133 - http-outgoing-1 >> PUT /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1
+14:15:49,602 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 61
+14:15:49,603 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
+14:15:49,603 DEBUG headers:136 - http-outgoing-1 >> Host: 52.255.138.41:8080
+14:15:49,603 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+14:15:49,603 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:49,603 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+14:15:49,603 DEBUG headers:136 - http-outgoing-1 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:49,604 DEBUG wire:73 - http-outgoing-1 >> "PUT /api/v1/QADevops_TestRun/item/9c0015f2-1825-4db7-a501-f98d4bb2f7b0 HTTP/1.1[\r][\n]"
+14:15:49,604 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 61[\r][\n]"
+14:15:49,604 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:49,605 DEBUG wire:73 - http-outgoing-1 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:49,605 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+14:15:49,605 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:49,606 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:49,606 DEBUG wire:73 - http-outgoing-1 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:49,606 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+14:15:49,606 DEBUG wire:87 - http-outgoing-1 >> "{"end_time":"2020-06-11T14:15:49.248+0530","status":"PASSED"}"
+14:15:49,627 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-index.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:49,629 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-index_en.ftl"): Not found
+14:15:49,633 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-index.ftl"): Found
+14:15:49,634 DEBUG cache:45 - Loading template for "v3html/v3-html-index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-index.ftl"
+14:15:49,842 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+14:15:49,842 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:49,843 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+14:15:49,843 DEBUG wire:73 - http-outgoing-1 << "Date: Thu, 11 Jun 2020 08:45:41 GMT[\r][\n]"
+14:15:49,843 DEBUG wire:73 - http-outgoing-1 << "Expires: 0[\r][\n]"
+14:15:49,843 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+14:15:49,843 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:49,843 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: DENY[\r][\n]"
+14:15:49,844 DEBUG wire:73 - http-outgoing-1 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:49,844 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 94[\r][\n]"
+14:15:49,844 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+14:15:49,844 DEBUG wire:87 - http-outgoing-1 << "{"message":"TestItem with ID = '9c0015f2-1825-4db7-a501-f98d4bb2f7b0' successfully finished."}"
+14:15:49,844 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+14:15:49,844 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:49,844 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+14:15:49,845 DEBUG headers:125 - http-outgoing-1 << Date: Thu, 11 Jun 2020 08:45:41 GMT
+14:15:49,845 DEBUG headers:125 - http-outgoing-1 << Expires: 0
+14:15:49,845 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+14:15:49,845 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+14:15:49,845 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: DENY
+14:15:49,845 DEBUG headers:125 - http-outgoing-1 << X-Xss-Protection: 1; mode=block
+14:15:49,845 DEBUG headers:125 - http-outgoing-1 << Content-Length: 94
+14:15:49,845 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:49,846 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:49,846 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:49,846 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:49,949 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-head.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:49,950 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-head_en.ftl"): Not found
+14:15:49,951 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-head.ftl"): Found
+14:15:49,951 DEBUG cache:45 - Loading template for "v3html/v3-html-head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-head.ftl"
+14:15:49,957 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-nav.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:49,958 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-nav_en.ftl"): Not found
+14:15:49,958 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-nav.ftl"): Found
+14:15:49,959 DEBUG cache:45 - Loading template for "v3html/v3-html-nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-nav.ftl"
+14:15:49,973 DEBUG cache:45 - Couldn't find template in cache for "v3html/test-view/v3-html-test-view.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:49,973 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view_en.ftl"): Not found
+14:15:49,974 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view.ftl"): Found
+14:15:49,974 DEBUG cache:45 - Loading template for "v3html/test-view/v3-html-test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-test-view.ftl"
+14:15:49,992 DEBUG cache:45 - Couldn't find template in cache for "v3html/test-view/v3-html-test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:49,992 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view-charts_en.ftl"): Not found
+14:15:49,993 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view-charts.ftl"): Found
+14:15:49,993 DEBUG cache:45 - Loading template for "v3html/test-view/v3-html-test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-test-view-charts.ftl"
+14:15:50,011 DEBUG cache:45 - Couldn't find template in cache for "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:50,011 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-standard_en.ftl"): Not found
+14:15:50,012 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-standard.ftl"): Found
+14:15:50,012 DEBUG cache:45 - Loading template for "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-standard.ftl"
+14:15:50,028 DEBUG cache:45 - Couldn't find template in cache for "v3html/category-view/v3-html-category-view.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:50,029 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/category-view/v3-html-category-view_en.ftl"): Not found
+14:15:50,030 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/category-view/v3-html-category-view.ftl"): Found
+14:15:50,030 DEBUG cache:45 - Loading template for "v3html/category-view/v3-html-category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/category-view/v3-html-category-view.ftl"
+14:15:50,038 DEBUG cache:45 - Couldn't find template in cache for "v3html/exception-view/v3-html-exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:50,039 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/exception-view/v3-html-exception-view_en.ftl"): Not found
+14:15:50,041 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/exception-view/v3-html-exception-view.ftl"): Found
+14:15:50,041 DEBUG cache:45 - Loading template for "v3html/exception-view/v3-html-exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/exception-view/v3-html-exception-view.ftl"
+14:15:50,044 DEBUG cache:45 - Couldn't find template in cache for "v3html/author-view/v3-html-author-view.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:50,045 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/author-view/v3-html-author-view_en.ftl"): Not found
+14:15:50,045 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/author-view/v3-html-author-view.ftl"): Found
+14:15:50,046 DEBUG cache:45 - Loading template for "v3html/author-view/v3-html-author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/author-view/v3-html-author-view.ftl"
+14:15:50,051 DEBUG cache:45 - Couldn't find template in cache for "v3html/dashboard-view/v3-html-dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:50,052 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/dashboard-view/v3-html-dashboard-view_en.ftl"): Not found
+14:15:50,053 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/dashboard-view/v3-html-dashboard-view.ftl"): Found
+14:15:50,053 DEBUG cache:45 - Loading template for "v3html/dashboard-view/v3-html-dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/dashboard-view/v3-html-dashboard-view.ftl"
+14:15:50,064 DEBUG cache:45 - Couldn't find template in cache for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+14:15:50,064 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view_en.ftl"): Not found
+14:15:50,065 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view.ftl"): Found
+14:15:50,065 DEBUG cache:45 - Loading template for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/hemanjitg/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/logs-view/v3-html-testrunner-logs-view.ftl"
+14:15:50,114 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:50,114 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:50,115 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:50,115 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:50,116 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:50,116 DEBUG MainClientExec:256 - Executing request PUT /api/v1/QADevops_TestRun/item/8049f513-1334-4c30-8033-5dd2314505bb HTTP/1.1
+14:15:50,117 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:50,117 DEBUG headers:133 - http-outgoing-1 >> PUT /api/v1/QADevops_TestRun/item/8049f513-1334-4c30-8033-5dd2314505bb HTTP/1.1
+14:15:50,118 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 61
+14:15:50,118 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
+14:15:50,119 DEBUG headers:136 - http-outgoing-1 >> Host: 52.255.138.41:8080
+14:15:50,119 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+14:15:50,119 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:50,119 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+14:15:50,119 DEBUG headers:136 - http-outgoing-1 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:50,119 DEBUG wire:73 - http-outgoing-1 >> "PUT /api/v1/QADevops_TestRun/item/8049f513-1334-4c30-8033-5dd2314505bb HTTP/1.1[\r][\n]"
+14:15:50,120 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 61[\r][\n]"
+14:15:50,120 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:50,120 DEBUG wire:73 - http-outgoing-1 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:50,120 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+14:15:50,121 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:50,121 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:50,121 DEBUG wire:73 - http-outgoing-1 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:50,121 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+14:15:50,121 DEBUG wire:87 - http-outgoing-1 >> "{"end_time":"2020-06-11T14:15:50.112+0530","status":"PASSED"}"
+14:15:50,353 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+14:15:50,354 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:50,354 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+14:15:50,354 DEBUG wire:73 - http-outgoing-1 << "Date: Thu, 11 Jun 2020 08:45:43 GMT[\r][\n]"
+14:15:50,354 DEBUG wire:73 - http-outgoing-1 << "Expires: 0[\r][\n]"
+14:15:50,354 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+14:15:50,355 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:50,355 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: DENY[\r][\n]"
+14:15:50,355 DEBUG wire:73 - http-outgoing-1 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:50,355 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 94[\r][\n]"
+14:15:50,355 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+14:15:50,355 DEBUG wire:87 - http-outgoing-1 << "{"message":"TestItem with ID = '8049f513-1334-4c30-8033-5dd2314505bb' successfully finished."}"
+14:15:50,356 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+14:15:50,356 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:50,356 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+14:15:50,356 DEBUG headers:125 - http-outgoing-1 << Date: Thu, 11 Jun 2020 08:45:43 GMT
+14:15:50,356 DEBUG headers:125 - http-outgoing-1 << Expires: 0
+14:15:50,357 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+14:15:50,357 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+14:15:50,357 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: DENY
+14:15:50,357 DEBUG headers:125 - http-outgoing-1 << X-Xss-Protection: 1; mode=block
+14:15:50,357 DEBUG headers:125 - http-outgoing-1 << Content-Length: 94
+14:15:50,357 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:50,358 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:50,358 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:50,358 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:50,363 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+14:15:50,364 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+14:15:50,364 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:50,364 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 1; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:50,364 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:50,364 DEBUG MainClientExec:256 - Executing request PUT /api/v1/QADevops_TestRun/launch/0df665ed-9963-42a2-a8d8-c0f6e8a1b084/finish HTTP/1.1
+14:15:50,364 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+14:15:50,365 DEBUG headers:133 - http-outgoing-1 >> PUT /api/v1/QADevops_TestRun/launch/0df665ed-9963-42a2-a8d8-c0f6e8a1b084/finish HTTP/1.1
+14:15:50,365 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 61
+14:15:50,365 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
+14:15:50,365 DEBUG headers:136 - http-outgoing-1 >> Host: 52.255.138.41:8080
+14:15:50,365 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+14:15:50,365 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+14:15:50,366 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+14:15:50,366 DEBUG headers:136 - http-outgoing-1 >> Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0
+14:15:50,367 DEBUG wire:73 - http-outgoing-1 >> "PUT /api/v1/QADevops_TestRun/launch/0df665ed-9963-42a2-a8d8-c0f6e8a1b084/finish HTTP/1.1[\r][\n]"
+14:15:50,368 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 61[\r][\n]"
+14:15:50,369 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:15:50,369 DEBUG wire:73 - http-outgoing-1 >> "Host: 52.255.138.41:8080[\r][\n]"
+14:15:50,369 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+14:15:50,369 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+14:15:50,369 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:15:50,370 DEBUG wire:73 - http-outgoing-1 >> "Authorization: bearer cc320c4f-1b88-433f-90ee-a814585357f0[\r][\n]"
+14:15:50,370 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+14:15:50,370 DEBUG wire:87 - http-outgoing-1 >> "{"end_time":"2020-06-11T14:15:50.114+0530","status":"PASSED"}"
+14:15:50,614 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+14:15:50,614 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+14:15:50,614 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+14:15:50,614 DEBUG wire:73 - http-outgoing-1 << "Date: Thu, 11 Jun 2020 08:45:43 GMT[\r][\n]"
+14:15:50,614 DEBUG wire:73 - http-outgoing-1 << "Expires: 0[\r][\n]"
+14:15:50,615 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+14:15:50,615 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+14:15:50,615 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: DENY[\r][\n]"
+14:15:50,615 DEBUG wire:73 - http-outgoing-1 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+14:15:50,615 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 129[\r][\n]"
+14:15:50,615 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+14:15:50,615 DEBUG wire:87 - http-outgoing-1 << "{"id":"0df665ed-9963-42a2-a8d8-c0f6e8a1b084","number":17,"link":"http://52.255.138.41:8080/ui/#qadevops_testrun/launches/all/17"}"
+14:15:50,615 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+14:15:50,615 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+14:15:50,615 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+14:15:50,615 DEBUG headers:125 - http-outgoing-1 << Date: Thu, 11 Jun 2020 08:45:43 GMT
+14:15:50,616 DEBUG headers:125 - http-outgoing-1 << Expires: 0
+14:15:50,616 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+14:15:50,616 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+14:15:50,616 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: DENY
+14:15:50,616 DEBUG headers:125 - http-outgoing-1 << X-Xss-Protection: 1; mode=block
+14:15:50,616 DEBUG headers:125 - http-outgoing-1 << Content-Length: 129
+14:15:50,616 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+14:15:50,617 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {}->http://52.255.138.41:8080] can be kept alive indefinitely
+14:15:50,617 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+14:15:50,617 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {}->http://52.255.138.41:8080][total kept alive: 2; route allocated: 2 of 50; total allocated: 2 of 100]
+14:15:50,618 DEBUG PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+14:15:50,619 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-1: Close connection
+14:15:50,619 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+14:15:50,620 DEBUG PoolingHttpClientConnectionManager:414 - Connection manager shut down

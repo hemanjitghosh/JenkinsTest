@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite  name="QA Devops" parallel="methods" thread-count="1" >
+
+<listeners>
+   <listener
+			class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+       <listener class-name="com.qa.listeners.CustomListeners"/>
+  </listeners>
+  
+   <test name = "HealthCare App"  >
+   <parameter name="browser" value="chrome"/>
+      <classes>
+        <!-- <class name = "com.qa.testcases.HealthCare" />
+        <class name = "com.qa.testcases.ChartRepo" />
+        <class name = "com.qa.testcases.MRRCampaign" />
+        <class name = "com.qa.testcases.ChasesMRR" />
+        <class name = "com.qa.testcases.MrrApiTests" /> -->
+        <class name = "com.qa.testcases.XrayTestCases" />
+      </classes>
+   </test>
+   
+  <!--  <test name = "MRR Campaign"  parallel="tests" thread-count="1">
+   <parameter name="browser" value="chrome"/>
+      <classes>
+         <class name = "com.qa.testcases.MRRCampaign" />
+        
+      </classes>
+   </test> -->
+   <!-- 
+   <test name = "MRR ChartRepo"  parallel="tests">
+   <parameter name="browser" value="chrome"/>
+      <classes>
+         <class name = "com.qa.testcases.ChartRepo" />
+        
+      </classes>
+   </test> -->
+</suite>

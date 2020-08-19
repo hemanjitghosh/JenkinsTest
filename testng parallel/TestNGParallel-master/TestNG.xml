@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests" >
+
+<listeners>
+   <listener
+			class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+       
+  </listeners>
+  
+    <test name="com.FirstTest" parallel="methods" thread-count="3">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qa.testcases.HealthCare">
+                <methods>
+                
+                 <include name="QA01_VerifyPatientName" />
+                <!-- <include name="QA02_VerifyPatientBP" />
+                <include name="QA03_VerifyPatientPulse" />
+                 
+                    <include name="QA04_GOOGLE1" /> 
+                    <include name="QA05_GOOGLE2" />
+                    <include name="QA06_GOOGLE3" />
+                     <include name="QA07_VerifyPatientName" />
+                <include name="QA08_VerifyPatientBP" />
+                <include name="QA09_VerifyPatientPulse" /> -->
+                    
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- First Test -->
+     <!-- <test name="com.SecondTest"  parallel="methods" thread-count="5">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="SecondTest">
+                <methods>
+                    <include name="GOOGLE4" />
+                    <include name="YANDEX" />
+                </methods>
+            </class>
+        </classes>
+    </test>  -->
+</suite> <!-- Suite -->
