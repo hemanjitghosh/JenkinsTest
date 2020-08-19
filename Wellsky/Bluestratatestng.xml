@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteRegression" parallel="tests" thread-count="5">
+
+		<parameter name="applicationTYPE" value="OrdersEmar" />
+	<parameter name="appURL"
+		value="https://devclient.bluestrataemr.com/qa2" />
+	<parameter name="browserName" value="chrome" />
+	<parameter name="automationKit" value="selenium" />
+	<test name="Orders Test Scripts">
+		<classes>		
+		<!-- <class name="bluestrata.tests.functionalTests.ClinicalTestCases" />	 -->		
+		<class name="bluestrata.tests.functionalTests.ClinicalTestCases" />	
+								
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- SuiteRegression -->

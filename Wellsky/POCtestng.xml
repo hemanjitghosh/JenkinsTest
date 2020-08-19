@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteRegression" parallel="tests" thread-count="5">
+	<parameter name="pocURL"
+		value="https://devclient.bluestrataemr.com/poc/qa2" />
+	<parameter name="applicationTYPE" value="POC" />
+	<parameter name="browserName" value="chrome" />
+	<parameter name="automationKit" value="selenium" />
+	<test name="test">
+		<classes>
+			<class name="POC.tests.functionalTests.CarePlan_ADLs_TestCases" />
+			<class name="POC.tests.functionalTests.CarePlan_BowelAndBladder_TestCases" />
+			<class name="POC.tests.functionalTests.CarePlan_HeightAndWeight_TestCases" />
+			<class name="POC.tests.functionalTests.CarePlan_IntakeAndOutput_TestCases" />
+			<class name="POC.tests.functionalTests.CarePlan_MoodAndBehavior_TestCases" />
+			<class name="POC.tests.functionalTests.CarePlan_Restorative_TestCases" />
+			<class name="POC.tests.functionalTests.CarePlan_Vitals_TestCases" />
+			<class name="POC.tests.functionalTests.HomePageTestCases" />
+			</classes>
+	</test> <!-- Test -->
+</suite> <!-- SuiteRegression --> 
